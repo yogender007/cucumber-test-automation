@@ -7,22 +7,22 @@ import steps.Common_Steps;
 public class LoginActions {
 
     private WebDriver driver;
-    LoginPage login_elements;
+    LoginPage loginPage;
 
     public LoginActions(Common_Steps common_steps) {
         this.driver = common_steps.getDriver();
-        login_elements = new LoginPage(driver);
+        loginPage = new LoginPage(driver);
     }
 
     public void enterUsername() {
-        login_elements.Username.sendKeys("standard_user");
+        loginPage.Username.sendKeys("standard_user");
     }
 
     public void enterPassword() {
-        login_elements.Password.sendKeys("secret_sauce");
+        loginPage.Password.sendKeys("secret_sauce");
     }
 
     public void clickLogin() {
-        login_elements.LoginButton.click();
+        loginPage.LoginButton.click();
     }
 }

@@ -8,8 +8,6 @@ public class CommonActions {
 
     private WebDriver driver;
 
-    Common_Steps common_steps;
-
     public CommonActions(Common_Steps common_steps) {
         this.driver = common_steps.getDriver();
     }
